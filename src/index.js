@@ -6,11 +6,10 @@ import HomePage from './HomePage';
 import SecondPage from './SecondPage';
 import reportWebVitals from './reportWebVitals';
 
+// Set the basename to your repository name
+const basename = '/portfolio'; // Replace with your repository name
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
-
-// Set basename to the repository name (replace "your-repo-name" with your actual repository name)
-const basename = process.env.PUBLIC_URL || '/';
-
 root.render(
   <React.StrictMode>
     <BrowserRouter basename={basename}>
@@ -22,7 +21,4 @@ root.render(
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
