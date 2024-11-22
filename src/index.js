@@ -1,17 +1,17 @@
 import './App.css';
-import {BrowserRouter as Router,Switch,Route} from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Updated import
 import HomePage from './HomePage';
-import secondPage from './secondPage';
+import SecondPage from './SecondPage'; // Ensure proper case sensitivity
 
 function App() {
   return (
     <div className="App">
-     <Router>
-       <Switch>
-         <Route path='/portfolio' exact component={HomePage}/>
-         <Route path='/portfolio/secondpage' exact component={secondPage}/>
-       </Switch>
-     </Router>
+      <Router>
+        <Routes> {/* Replaced Switch with Routes */}
+          <Route path="/portfolio" element={<HomePage />} /> {/* Updated syntax */}
+          <Route path="/portfolio/secondpage" element={<SecondPage />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
