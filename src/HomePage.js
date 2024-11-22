@@ -1,9 +1,10 @@
+import { Link } from 'react-router-dom';
 import './App.css';
 
 function HomePage() {
   return (
     <div className="App">
-        <h1>React App</h1>
+        <Link to="/second">Second Page</Link>
     </div>
   );
 }
