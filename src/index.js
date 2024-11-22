@@ -1,19 +1,23 @@
-import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Updated import
-import HomePage from './HomePage';
-import SecondPage from './SecondPage'; // Ensure proper case sensitivity
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
 
-function App() {
-  return (
-    <div className="App">
-      <Router>
-        <Routes> {/* Replaced Switch with Routes */}
-          <Route path="/portfolio" element={<HomePage />} /> {/* Updated syntax */}
-          <Route path="/portfolio/secondpage" element={<SecondPage />} />
-        </Routes>
-      </Router>
-    </div>
-  );
-}
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <BrowserRouter basename={window.location.pathname || ''}>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/about" element={<div>About</div>} />
+      </Routes>
+    </BrowserRouter>
+  </React.StrictMode>
+);
 
-export default App;
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
