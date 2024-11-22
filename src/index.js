@@ -1,6 +1,6 @@
 import './App.css';
 import {BrowserRouter as Router,Switch,Route} from 'react-router-dom'
-import App from './App';
+import HomePage from './HomePage';
 import secondPage from './secondPage';
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     <div className="App">
      <Router>
        <Switch>
-         <Route path='/portfolio' exact component={App}/>
+         <Route path='/portfolio' exact component={HomePage}/>
          <Route path='/portfolio/secondpage' exact component={secondPage}/>
        </Switch>
      </Router>

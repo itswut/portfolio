@@ -1,6 +1,6 @@
 import './App.css';
 
-function App() {
+function HomePage() {
   return (
     <div className="App">
         <h1>React App</h1>
@@ -8,4 +8,4 @@ function App() {
   );
 }
 
-export default App;
+export default HomePage;
