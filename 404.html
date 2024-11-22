@@ -3,5 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>404 Not Found</title>
+    <script>
+        // Redirect 404s to index.html for React Router
+        var redirectTo = '/portfolio' + location.pathname + location.search;
+        location.replace(redirectTo);
+    </script>  
 </head>
+<body>
+    <h1>404 Not Found</h1>
+</body>
 </html>
