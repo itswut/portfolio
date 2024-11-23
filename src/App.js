@@ -4,7 +4,7 @@ import Home from './Home';
 
 const App = () => {
     return (
-        <Router>
+        <Router basename="/portfolio">
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route 
@@ -13,7 +13,7 @@ const App = () => {
                         <div className="App">
                             <h1>About</h1>
                         </div>
-                    } 
+                    }
                 />
             </Routes>
         </Router>
