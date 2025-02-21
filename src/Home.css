@@ -1,0 +1,54 @@
+:root {
+    --background: 300 4% 5%;
+    --foreground: 0 0% 98%;
+    --card: 240 3% 6%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 3% 6%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 248 91% 82%;
+    --primary-foreground: 0 0% 2%;
+    --secondary: 240 2% 12%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 2% 18%;
+    --muted-foreground: 252 2% 49%;
+    --accent: 251 18% 12%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 2% 12%;
+    --input: 240 2% 18%;
+    --ring: 248 91% 40%;
+}
+
+html {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+}
+
+.text-primary {
+    color: hsl(var(--primary));
+}
+
+.bg-background {
+    background-color: hsl(var(--background));
+}
+
+.bg-card {
+    background-color: hsl(var(--card));
+}
+
+.bg-secondary\/60, .bg-secondary {
+    background-color: hsl(var(--secondary) / .6);
+}
+
+.ring-offset-background {
+    --tw-ring-offset-color: hsl(var(--background));
+}
+
+.text-primary-foreground {
+    color: hsl(var(--primary-foreground));
+}
+
+.bg-primary {
+    background-color: hsl(var(--primary));
+}
